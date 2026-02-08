@@ -28,3 +28,14 @@ From customer
 Where shipping_type in ('Express','Standard')
 Group By shipping_type
 
+--Q5. Do subscribed customers spend more? Compare average spend and total revenue between subscribers and non-subscribers.
+Select 
+	subscription_status,
+	Count(customer_id) as total_customers_subscription,
+	Avg(purchase_amount) as subscription_wise_average,
+	Sum(purchase_amount) as total_revenue_wise_average
+From customer
+Group By subscription_status
+Order By total_revenue_wise_average desc
+
+
