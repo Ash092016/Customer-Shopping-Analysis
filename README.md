@@ -1,6 +1,6 @@
 # Customer Behavior Dashboard w/ Power BI
 
-![Dashboard Preview](/images/Page1.png)
+![Dashboard Preview](/images/Customer-Behavior-Dashboard.png)
 
 ## Introduction
 
